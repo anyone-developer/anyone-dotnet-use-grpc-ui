@@ -1,4 +1,4 @@
-# anyone-use-grpc-ui
+# anyone-dotnet-use-grpc-ui
 
 This repo simply help you to hosting a grpcUI portal from referenced application. This repo depends on *gRpc reflection* and this project: https://github.com/fullstorydev/grpcui
 
