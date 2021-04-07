@@ -12,7 +12,7 @@ This repo would bundle nuget package. Anyone can reference it from *nuget.org*. 
 
 ## Be Attention
 
-I tested it in windows 10 x86_64 environment. There is no guarantee that it would run properly in linux or macOS. Official executable program only support x86, x64 architecture. It cannot run in Arm platform, including *Apple M1 chip platform*. 
+I tested it in windows 10 x86_64 environment. There is no guarantee that it would run properly in linux or macOS. Official executable program only support x86, x64 architecture. It cannot run in Arm platform. Probably *Apple M1 chip platform* won't work. 
 
 ## How to use
 
