@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>eedf7151-41c9-4cd8-bd07-c94b0fadb5e2</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <AssemblyName>AnyoneDeveloper.Grpc.UI.Demo</AssemblyName>
+    <RootNamespace>AnyoneDeveloper.Grpc.UI.Demo</RootNamespace>
+    <PackageId>AnyoneDeveloper.Grpc.UI.Demo</PackageId>
+    <Authors>Tekdycaml</Authors>
+    <Product>AnyoneDeveloper.Grpc.UI.Demo</Product>
+    <Company>AnyoneDeveloper</Company>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.34.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.36.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnyoneDeveloper.Grpc.UI\AnyoneDeveloper.Grpc.UI.csproj" />
+  </ItemGroup>
+
+</Project>

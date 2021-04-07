@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>AnyoneDeveloper.Grpc.UI</RootNamespace>
+    <AssemblyName>AnyoneDeveloper.Grpc.UI</AssemblyName>
+    <Authors>Tekdycaml</Authors>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>This package simply help you to hosting a grpcUI portal from referenced application.</Description>
+    <Copyright>Anyone Developer</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/anyone-developer/anyone-dotnet-use-grpc-ui</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/anyone-developer/anyone-dotnet-use-grpc-ui</RepositoryUrl>
+    <RepositoryType>C#</RepositoryType>
+    <PackageTags>anyone-developer,anyone-user-grp-ui</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Content Include="./grpcui_*" copyToOutput="true">
+	  <IncludeInPackage>true</IncludeInPackage>
+	  <CopyToOutput>true</CopyToOutput>
+	  <BuildAction>Content</BuildAction>
+	  <copyToOutput>true</copyToOutput>
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
